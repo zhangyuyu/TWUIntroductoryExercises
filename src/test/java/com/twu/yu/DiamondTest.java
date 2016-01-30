@@ -9,4 +9,9 @@ public class DiamondTest {
         diamond.drawIsosceles(3);
     }
 
+    @Test
+    public void drawDiamond() throws Exception {
+        Diamond diamond = new Diamond();
+        diamond.drawDiamond(3);
+    }
 }
