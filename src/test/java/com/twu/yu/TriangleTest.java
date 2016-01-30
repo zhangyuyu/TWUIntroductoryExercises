@@ -2,6 +2,8 @@ package com.twu.yu;
 
 import org.junit.Test;
 
+import static com.twu.yu.Triangle.drawHorizontal;
+
 public class TriangleTest {
     @Test
     public void printOneAsteriskToTheConsole() throws Exception {
@@ -10,8 +12,7 @@ public class TriangleTest {
 
     @Test
     public void print3AsterisksonOneLineWhenGivenNumberIs3() throws Exception {
-        Triangle triangle = new Triangle();
-        triangle.drawHorizontal(3);
+        drawHorizontal(3);
     }
 
     @Test

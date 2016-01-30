@@ -1,7 +1,7 @@
 package com.twu.yu;
 
 public class Triangle {
-    public void drawHorizontal(int number) {
+    public static void drawHorizontal(int number) {
         for (int i = 1; i <= number; i++) {
             System.out.print("*");
         }
