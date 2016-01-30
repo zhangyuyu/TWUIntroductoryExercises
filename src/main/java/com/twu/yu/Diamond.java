@@ -8,32 +8,33 @@ public class Diamond {
         drawHorizontal(number * 2 - 1);
     }
 
-    private void drawSpace(int spaceNumber) {
-        for (int i = 1; i <= spaceNumber; i++) {
-            System.out.print(" ");
-        }
-    }
-
     public void drawDiamond(int number) {
-        drawIsoscelesExceptCenter(number,true);
-        drawHorizontal(number * 2 - 1);
+        drawIsosceles(number);
         System.out.println();
         drawIsoscelesExceptCenter(number,false);
     }
 
-    private void drawIsoscelesExceptCenter(int x, boolean up) {
+    private void drawIsoscelesExceptCenter(int number, boolean up) {
         if (up) {
-            for (int i = 1; i < x; i++) {
-                drawSpace(x - i);
-                drawHorizontal(2 * i - 1);
-                System.out.println();
+            for (int line = 1; line < number; line++) {
+                drawLineOfIsosceles(number, line);
             }
         } else {
-            for (int i = x - 1; i > 0; i--) {
-                drawSpace(x - i);
-                drawHorizontal(2 * i - 1);
-                System.out.println();
+            for (int line = number - 1; line > 0; line--) {
+                drawLineOfIsosceles(number, line);
             }
+        }
+    }
+
+    private void drawLineOfIsosceles(int number, int line) {
+        drawSpace(number - line);
+        drawHorizontal(2 * line - 1);
+        System.out.println();
+    }
+
+    private void drawSpace(int spaceNumber) {
+        for (int line = 1; line <= spaceNumber; line++) {
+            System.out.print(" ");
         }
     }
 }
