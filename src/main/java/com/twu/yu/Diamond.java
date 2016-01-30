@@ -11,6 +11,12 @@ public class Diamond {
     public void drawDiamond(int number) {
         drawIsosceles(number);
         System.out.println();
+        drawIsoscelesExceptCenter(number, false);
+    }
+
+    public void drawDiamondWithName(int number, String name) {
+        drawIsoscelesExceptCenter(number,true);
+        System.out.println(name);
         drawIsoscelesExceptCenter(number,false);
     }
 

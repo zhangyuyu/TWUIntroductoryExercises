@@ -14,4 +14,10 @@ public class DiamondTest {
         Diamond diamond = new Diamond();
         diamond.drawDiamond(3);
     }
+
+    @Test
+    public void DiamondWithName() throws Exception {
+        Diamond diamond = new Diamond();
+        diamond.drawDiamondWithName(3, "zhangyu");
+    }
 }
