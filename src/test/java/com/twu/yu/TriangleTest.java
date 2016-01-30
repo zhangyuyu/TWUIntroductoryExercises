@@ -11,7 +11,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void print3AsterisksonOneLineWhenGivenNumberIs3() throws Exception {
+    public void print3AsterisksOnOneLineWhenGivenNumberIs3() throws Exception {
         drawHorizontal(3);
     }
 
@@ -24,6 +24,6 @@ public class TriangleTest {
     @Test
     public void print3LinesWithLinenumberAsteriskPerLineWhenGivenNumberIs3() throws Exception {
         Triangle triangle = new Triangle();
-        triangle.drawRightRriangle(3);
+        triangle.drawRightTriangle(3);
     }
 }

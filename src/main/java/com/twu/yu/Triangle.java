@@ -13,7 +13,7 @@ public class Triangle {
         }
     }
 
-    public void drawRightRriangle(int number) {
+    public void drawRightTriangle(int number) {
         for (int line = 1; line <= number; line++) {
             drawHorizontal(line);
             System.out.println();
